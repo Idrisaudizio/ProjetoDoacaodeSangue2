@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="pos_doacao.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header class="header">
+
+    <a href="/" class="logo">Posto de Coleta</a>
+
+    <!-- botão hamburguer -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburguer">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="/">Agendar Doação</a></li>
+            <li><a href="/">Estoque</a></li>
+            <li><a href="/">Informações</a></li>
+            <li><a href="/">Contato</a></li>
+
+            <!-- Botão de login -->
+            <li><label for="login-modal" class="login-btn">Login</label></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- Checkbox que abre modal -->
+<input type="checkbox" id="login-modal" class="modal-toggle">
+
+<!-- Checkbox para modo "esqueci a senha" -->
+<input type="checkbox" id="recuperar-modal" class="recuperar-toggle">
+
+<div class="modal-login">
+    <div class="modal-content">
+
+        <!-- BOTÃO FECHAR -->
+        <label for="login-modal" class="fechar-modal">X</label>
+
+        <!-- ================= LOGIN NORMAL ================== -->
+        <div class="tela-login">
+
+            <h2>Login</h2>
+
+            <form>
+
+                <label for="tipo-login">Tipo de Acesso:</label>
+                <select id="tipo-login" name="tipo-login" class="select-login">
+                    <option value="doador">🩸 Doador</option>
+                    <option value="recepcionista">🧑‍💼 Recepcionista</option>
+                    <option value="enfermeiro">👩‍⚕️ Enfermeiro</option>
+                    <option value="admin">🔐 Administrador</option>
+                </select>
+
+                <label>Email:</label>
+                <input type="email" placeholder="Digite seu email">
+
+                <label>Senha:</label>
+                <input type="password" placeholder="Digite sua senha">
+
+                <button class="btn-entrar">Entrar</button>
+            </form>
+
+            <div class="acoes-extra">
+                <label for="recuperar-modal" class="esqueceu">Esqueci minha senha</label>
+                <a href="#" class="cadastro">Fazer cadastro</a>
+            </div>
+
+        </div>
+
+
+        <!-- ================= RECUPERAR SENHA ================= -->
+        <div class="tela-recuperar">
+            <h2>Recuperar Senha</h2>
+
+            <form>
+                <label>Digite seu email:</label>
+                <input type="email" placeholder="email@exemplo.com">
+
+                <button class="btn-entrar">Enviar código</button>
+            </form>
+
+            <label for="recuperar-modal" class="voltar-login">← Voltar ao login</label>
+        </div>
+
+    </div>
+</div>
+
+<header class="header-pos">
+    <h1>CUIDADOS PÓS-DOAÇÃO</h1>
+</header>
+
+<section class="banner-pos">
+    <h2>Depois de doar sangue, o cuidado continua</h2>
+    <p>Pequenas ações garantem sua recuperação e bem-estar.</p>
+</section>
+
+<main class="conteudo-blog">
+
+    <article class="artigo-blog">
+
+        <!-- INTRODUÇÃO -->
+        <h2 class="titulo-artigo-blog">Após a Doação</h2>
+        <p>
+            Após doar sangue, é comum que o corpo precise de alguns cuidados especiais.
+            Essas orientações ajudam a evitar desconfortos e garantem uma recuperação tranquila.
+        </p>
+
+        <!-- CARDS DE CUIDADOS -->
+        <div class="cards-cuidado">
+
+            <div class="card-pos">
+                <h3>Hidrate-se bem</h3>
+                <p>Beba água, sucos e líquidos durante o dia.</p>
+            </div>
+
+            <div class="card-pos">
+                <h3>Evite esforço</h3>
+                <p>Não faça atividades físicas intensas nas próximas 24h.</p>
+            </div>
+
+            <div class="card-pos">
+                <h3>Não fume</h3>
+                <p>Evite fumar por pelo menos 2 horas após doar.</p>
+            </div>
+
+            <div class="card-pos">
+                <h3>Evite álcool</h3>
+                <p>Não consuma bebidas alcoólicas nas próximas 12h.</p>
+            </div>
+
+        </div>
+
+        <!-- LISTA DE RECOMENDAÇÕES -->
+        <h2 class="titulo-artigo-blog">Recomendações Importantes</h2>
+
+        <ul class="lista-recomendacoes-pos">
+            <li>Mantenha o curativo por pelo menos 4 horas;</li>
+            <li>Se sentir tontura, sente-se e coloque a cabeça entre os joelhos;</li>
+            <li>Se o local do furo sangrar, pressione por 5 a 10 minutos;</li>
+            <li>Evite carregar peso com o braço da doação;</li>
+            <li>Faça refeições leves e nutritivas;</li>
+            <li>Dê preferência ao descanso durante o dia.</li>
+        </ul>
+
+        <!-- BOX DE ALERTA -->
+        <div class="box-alerta-pos">
+            <h3>Atenção!</h3>
+            <p>
+                Caso sinta sintomas como tontura intensa, sangramento prolongado,
+                dormência no braço ou mal-estar forte, procure imediatamente o posto de saúde.
+            </p>
+        </div>
+
+        <!-- SEÇÃO FINAL -->
+        <h2 class="titulo-artigo-blog">O mais importante:</h2>
+        <p>
+            Se cuide! Sua doação já fez a diferença na vida de alguém.  
+            Agora é hora de se recuperar com tranquilidade.
+        </p>
+
+        <a href="index.html" class="btn-voltar-blog">Voltar ao Início</a>
+    </article>
+
+</main>
+    
+<footer class="rodape">
+    <div class="info-posto">
+        <strong>POSTO DE SAÚDE “X”</strong><br>
+        Endereço: Av. Nicolau Zarvos, nº 754 | CEP: 16401-300<br>
+        Segunda a Sexta, das 08:00 às 18:00 horas.<br>
+        CNPJ: 44.531.788/0001-38
+    </div>
+
+    <div class="info-sistema">
+        <strong>Versão do Sistema:</strong> 1.0 - 18/10/2025<br>
+        <strong>Portal atualizado em:</strong> 17/10/2025 15:00h
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="criterios.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header class="header">
+
+    <a href="/" class="logo">Posto de Coleta</a>
+
+    <!-- botão hamburguer -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburguer">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="/">Agendar Doação</a></li>
+            <li><a href="/">Estoque</a></li>
+            <li><a href="/">Informações</a></li>
+            <li><a href="/">Contato</a></li>
+
+            <!-- Botão de login -->
+            <li><label for="login-modal" class="login-btn">Login</label></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- Checkbox que abre modal -->
+<input type="checkbox" id="login-modal" class="modal-toggle">
+
+<!-- Checkbox para modo "esqueci a senha" -->
+<input type="checkbox" id="recuperar-modal" class="recuperar-toggle">
+
+<div class="modal-login">
+    <div class="modal-content">
+
+        <!-- BOTÃO FECHAR -->
+        <label for="login-modal" class="fechar-modal">X</label>
+
+        <!-- ================= LOGIN NORMAL ================== -->
+        <div class="tela-login">
+
+            <h2>Login</h2>
+
+            <form>
+
+                <label for="tipo-login">Tipo de Acesso:</label>
+                <select id="tipo-login" name="tipo-login" class="select-login">
+                    <option value="doador">🩸 Doador</option>
+                    <option value="recepcionista">🧑‍💼 Recepcionista</option>
+                    <option value="enfermeiro">👩‍⚕️ Enfermeiro</option>
+                    <option value="admin">🔐 Administrador</option>
+                </select>
+
+                <label>Email:</label>
+                <input type="email" placeholder="Digite seu email">
+
+                <label>Senha:</label>
+                <input type="password" placeholder="Digite sua senha">
+
+                <button class="btn-entrar">Entrar</button>
+            </form>
+
+            <div class="acoes-extra">
+                <label for="recuperar-modal" class="esqueceu">Esqueci minha senha</label>
+                <a href="#" class="cadastro">Fazer cadastro</a>
+            </div>
+
+        </div>
+
+
+        <!-- ================= RECUPERAR SENHA ================= -->
+        <div class="tela-recuperar">
+            <h2>Recuperar Senha</h2>
+
+            <form>
+                <label>Digite seu email:</label>
+                <input type="email" placeholder="email@exemplo.com">
+
+                <button class="btn-entrar">Enviar código</button>
+            </form>
+
+            <label for="recuperar-modal" class="voltar-login">← Voltar ao login</label>
+        </div>
+
+    </div>
+</div>
+
+<header class="header-criterios">
+    <h1>CRITÉRIOS PARA DOAR SANGUE</h1>
+</header>
+
+<!-- Banner estilo blog -->
+<section class="banner-blog">
+    <h2>Entenda quem pode e quem não pode doar sangue</h2>
+    <p>Informações oficiais baseadas nas normas do Ministério da Saúde</p>
+</section>
+
+<!-- Corpo do conteúdo -->
+<main class="conteudo-blog">
+
+    <article class="artigo">
+
+        <h2 class="titulo-artigo">Requisitos Básicos para Doação</h2>
+        <p>
+            Existem critérios fundamentais que todo doador precisa atender
+            antes de realizar sua doação de sangue. Estes requisitos garantem
+            a segurança do doador e também de quem irá receber o sangue.
+        </p>
+
+        <!-- Cards de critérios -->
+        <div class="cards-criterios">
+
+            <div class="card">
+                <h3>Idade</h3>
+                <p>- Entre 16 e 69 anos<br>
+                   - Menores precisam de autorização</p>
+            </div>
+
+            <div class="card">
+                <h3>Peso Mínimo</h3>
+                <p>- Obrigatório pesar mais de 50 kg</p>
+            </div>
+
+            <div class="card">
+                <h3>Saúde</h3>
+                <p>- Estar em boas condições de saúde<br>
+                   - Sem febre, gripe ou infecções</p>
+            </div>
+
+            <div class="card">
+                <h3>Documentação</h3>
+                <p>- Documento oficial com foto</p>
+            </div>
+
+        </div>
+
+        <!-- Seção explicativa -->
+        <h2 class="titulo-artigo">Situações que Impedem a Doação</h2>
+        <p>
+            Algumas situações podem impedir temporária ou definitivamente
+            a doação. Confira abaixo os casos mais comuns:
+        </p>
+
+        <ul class="lista-impedimentos">
+            <li>Febre, gripe ou resfriado nos últimos 7 dias</li>
+            <li>Tatuagem ou piercing feitos em menos de 12 meses</li>
+            <li>Cirurgias recentes</li>
+            <li>Consumo de álcool nas últimas 12 horas</li>
+            <li>Gestantes ou mulheres que estão amamentando</li>
+            <li>Exames endoscópicos recentes (6 meses)</li>
+        </ul>
+
+        <!-- Box de destaque -->
+        <div class="box-destaque">
+            <h3>Importante!</h3>
+            <p>
+                Cada caso é avaliado individualmente durante a triagem.
+                Mesmo que você tenha dúvidas, vá até o posto de doação
+                para ser avaliado por um profissional.
+            </p>
+        </div>
+
+        <!-- Conclusão -->
+        <h2 class="titulo-artigo">Quer saber se você pode doar?</h2>
+        <p>
+            Utilize nosso questionário simples para verificar seu
+            estado atual de forma rápida e prática.
+        </p>
+
+        <a href="index.html" class="btn-voltar">Voltar para o Início</a>
+    </article>
+</main>
+    
+
+<footer class="rodape">
+    <div class="info-posto">
+        <strong>POSTO DE SAÚDE “X”</strong><br>
+        Endereço: Av. Nicolau Zarvos, nº 754 | CEP: 16401-300<br>
+        Segunda a Sexta, das 08:00 às 18:00 horas.<br>
+        CNPJ: 44.531.788/0001-38
+    </div>
+
+    <div class="info-sistema">
+        <strong>Versão do Sistema:</strong> 1.0 - 18/10/2025<br>
+        <strong>Portal atualizado em:</strong> 17/10/2025 15:00h
+    </div>
+</footer>
+
+</body>
+</html>

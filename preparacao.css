@@ -1,0 +1,115 @@
+/* ===== Header ===== */
+.header-preparacao {
+    background: #f28b92;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ===== Banner ===== */
+.banner-blog {
+    background: #ffe7ea;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.banner-blog h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.banner-blog p {
+    color: #555;
+}
+
+/* ===== Corpo ===== */
+.conteudo-blog {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.artigo {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+}
+
+/* ===== Títulos ===== */
+.titulo-artigo {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #b32634;
+    font-size: 1.3rem;
+}
+
+/* ===== Cards ===== */
+.cards-preparacao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.card {
+    flex: 1;
+    min-width: 180px;
+    background: #f7e4e6;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+    color: #b32634;
+}
+
+/* ===== Lista ===== */
+.lista-recomendacoes {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.lista-recomendacoes li {
+    margin-bottom: 8px;
+}
+
+/* ===== Box destaque ===== */
+.box-destaque {
+    background: #fbc6cb;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 25px 0;
+}
+
+.box-destaque h3 {
+    margin-bottom: 10px;
+    color: #8b0000;
+}
+
+/* ===== Botão ===== */
+.btn-voltar {
+    display: inline-block;
+    background: #d55159;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ===== Responsivo ===== */
+@media (min-width: 800px) {
+    .banner-blog h2 {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        min-width: 200px;
+    }
+}

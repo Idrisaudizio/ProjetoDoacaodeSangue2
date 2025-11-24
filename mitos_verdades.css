@@ -1,0 +1,103 @@
+/* ===== HEADER ===== */
+.header-mitos {
+    background: #f28b92;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ===== BANNER ===== */
+.banner-mitos {
+    background: #ffe7ea;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.banner-mitos h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.banner-mitos p {
+    color: #555;
+}
+
+/* ===== CONTEÚDO ===== */
+.conteudo-blog-mitos {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.artigo-mitos {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+}
+
+.titulo-artigo-mitos {
+    color: #c32d37;
+    margin-bottom: 10px;
+}
+
+/* ===== LISTA DE MITOS ===== */
+.lista-mitos-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===== CARD DE MITO/VERDADE ===== */
+.mito-card {
+    background: #f7e4e6;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.mito-card h3 {
+    margin-bottom: 12px;
+    color: #b32634;
+}
+
+/* TAGS */
+.tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.veredito.falso {
+    background: #ffb5b5;
+    color: #8b0000;
+}
+
+.veredito.verdadeiro {
+    background: #c4ffc4;
+    color: #006400;
+}
+
+/* ===== Botão ===== */
+.btn-voltar-mitos {
+    display: inline-block;
+    background: #d55159;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 10px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/* ===== Responsivo ===== */
+@media (min-width: 800px) {
+    .banner-mitos h2 {
+        font-size: 1.8rem;
+    }
+}

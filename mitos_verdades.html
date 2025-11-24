@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mitos_verdades.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header class="header">
+
+    <a href="/" class="logo">Posto de Coleta</a>
+
+    <!-- botão hamburguer -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburguer">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="/">Agendar Doação</a></li>
+            <li><a href="/">Estoque</a></li>
+            <li><a href="/">Informações</a></li>
+            <li><a href="/">Contato</a></li>
+
+            <!-- Botão de login -->
+            <li><label for="login-modal" class="login-btn">Login</label></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- Checkbox que abre modal -->
+<input type="checkbox" id="login-modal" class="modal-toggle">
+
+<!-- Checkbox para modo "esqueci a senha" -->
+<input type="checkbox" id="recuperar-modal" class="recuperar-toggle">
+
+<div class="modal-login">
+    <div class="modal-content">
+
+        <!-- BOTÃO FECHAR -->
+        <label for="login-modal" class="fechar-modal">X</label>
+
+        <!-- ================= LOGIN NORMAL ================== -->
+        <div class="tela-login">
+
+            <h2>Login</h2>
+
+            <form>
+
+                <label for="tipo-login">Tipo de Acesso:</label>
+                <select id="tipo-login" name="tipo-login" class="select-login">
+                    <option value="doador">🩸 Doador</option>
+                    <option value="recepcionista">🧑‍💼 Recepcionista</option>
+                    <option value="enfermeiro">👩‍⚕️ Enfermeiro</option>
+                    <option value="admin">🔐 Administrador</option>
+                </select>
+
+                <label>Email:</label>
+                <input type="email" placeholder="Digite seu email">
+
+                <label>Senha:</label>
+                <input type="password" placeholder="Digite sua senha">
+
+                <button class="btn-entrar">Entrar</button>
+            </form>
+
+            <div class="acoes-extra">
+                <label for="recuperar-modal" class="esqueceu">Esqueci minha senha</label>
+                <a href="#" class="cadastro">Fazer cadastro</a>
+            </div>
+
+        </div>
+
+
+        <!-- ================= RECUPERAR SENHA ================= -->
+        <div class="tela-recuperar">
+            <h2>Recuperar Senha</h2>
+
+            <form>
+                <label>Digite seu email:</label>
+                <input type="email" placeholder="email@exemplo.com">
+
+                <button class="btn-entrar">Enviar código</button>
+            </form>
+
+            <label for="recuperar-modal" class="voltar-login">← Voltar ao login</label>
+        </div>
+
+    </div>
+</div>
+
+<header class="header-mitos">
+    <h1>MITOS E VERDADES</h1>
+</header>
+
+<section class="banner-mitos">
+    <h2>Desvendando as principais dúvidas sobre doação</h2>
+    <p>Entenda o que é fato — e o que não passa de mito.</p>
+</section>
+
+<main class="conteudo-blog-mitos">
+
+    <article class="artigo-mitos">
+
+        <h2 class="titulo-artigo-mitos">O que é mito? O que é verdade?</h2>
+
+        <p>
+            Muitas pessoas deixam de doar por acreditarem em informações erradas.
+            Nesta página você encontra os principais mitos e verdades sobre a doação de sangue.
+        </p>
+
+        <div class="lista-mitos-container">
+
+            <!-- Card -->
+            <div class="mito-card">
+                <h3>“Doar sangue engrossa ou afina o sangue.”</h3>
+                <span class="tag veredito falso">MITO</span>
+                <p>
+                    A doação não altera a viscosidade do sangue.
+                    Após a coleta, o organismo recompõe naturalmente o volume doado.
+                </p>
+            </div>
+
+            <!-- Card -->
+            <div class="mito-card">
+                <h3>“Doar sangue dói.”</h3>
+                <span class="tag veredito falso">MITO</span>
+                <p>
+                    Você sente apenas a picada inicial da agulha. 
+                    Depois disso, o processo é rápido e praticamente indolor.
+                </p>
+            </div>
+
+            <!-- Card -->
+            <div class="mito-card">
+                <h3>“Quem tem tatuagem não pode doar.”</h3>
+                <span class="tag veredito verdadeiro">VERDADE</span>
+                <p>
+                    Pessoas tatuadas podem doar normalmente, desde que tenham
+                    feito a tatuagem há mais de 12 meses.
+                </p>
+            </div>
+
+            <!-- Card -->
+            <div class="mito-card">
+                <h3>“Doar sangue vicia.”</h3>
+                <span class="tag veredito falso">MITO</span>
+                <p>
+                    A doação não causa dependência.
+                    O corpo se recupera naturalmente e não cria “necessidade” de doar.
+                </p>
+            </div>
+
+            <!-- Card -->
+            <div class="mito-card">
+                <h3>“Gestantes não podem doar.”</h3>
+                <span class="tag veredito verdadeiro">VERDADE</span>
+                <p>
+                    Gravidez, amamentação recente e parto impedem temporariamente a doação,
+                    por segurança da mãe e do bebê.
+                </p>
+            </div>
+
+            <!-- Card -->
+            <div class="mito-card">
+                <h3>“Doar sangue pode transmitir doenças.”</h3>
+                <span class="tag veredito falso">MITO</span>
+                <p>
+                    Todo o material usado é novo, lacrado e descartável.
+                    Não há risco de contaminação.
+                </p>
+            </div>
+
+        </div>
+
+        <a href="index.html" class="btn-voltar-mitos">Voltar ao Início</a>
+    </article>
+
+</main>
+    
+<footer class="rodape">
+    <div class="info-posto">
+        <strong>POSTO DE SAÚDE “X”</strong><br>
+        Endereço: Av. Nicolau Zarvos, nº 754 | CEP: 16401-300<br>
+        Segunda a Sexta, das 08:00 às 18:00 horas.<br>
+        CNPJ: 44.531.788/0001-38
+    </div>
+
+    <div class="info-sistema">
+        <strong>Versão do Sistema:</strong> 1.0 - 18/10/2025<br>
+        <strong>Portal atualizado em:</strong> 17/10/2025 15:00h
+    </div>
+</footer>
+
+</body>
+</html>

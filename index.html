@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOE Lins</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header class="header">
+
+    <a href="/" class="logo">Posto de Coleta</a>
+
+    <!-- botão hamburguer -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburguer">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="/">Início</a></li>
+            <li><a href="/">Agendar Doação</a></li>
+            <li><a href="/">Estoque</a></li>
+            <li><a href="/">Informações</a></li>
+            <li><a href="/">Contato</a></li>
+
+            <!-- Botão de login -->
+            <li><label for="login-modal" class="login-btn">Login</label></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- Checkbox que abre modal -->
+<input type="checkbox" id="login-modal" class="modal-toggle">
+
+<!-- Checkbox para modo "esqueci a senha" -->
+<input type="checkbox" id="recuperar-modal" class="recuperar-toggle">
+
+<div class="modal-login">
+    <div class="modal-content">
+
+        <!-- BOTÃO FECHAR -->
+        <label for="login-modal" class="fechar-modal">X</label>
+
+        <!-- ================= LOGIN NORMAL ================== -->
+        <div class="tela-login">
+
+            <h2>Login</h2>
+
+            <form>
+
+                <label for="tipo-login">Tipo de Acesso:</label>
+                <select id="tipo-login" name="tipo-login" class="select-login">
+                    <option value="doador">🩸 Doador</option>
+                    <option value="recepcionista">🧑‍💼 Recepcionista</option>
+                    <option value="enfermeiro">👩‍⚕️ Enfermeiro</option>
+                    <option value="admin">🔐 Administrador</option>
+                </select>
+
+                <label>Email:</label>
+                <input type="email" placeholder="Digite seu email">
+
+                <label>Senha:</label>
+                <input type="password" placeholder="Digite sua senha">
+
+                <button class="btn-entrar">Entrar</button>
+            </form>
+
+            <div class="acoes-extra">
+                <label for="recuperar-modal" class="esqueceu">Esqueci minha senha</label>
+                <a href="#" class="cadastro">Fazer cadastro</a>
+            </div>
+
+        </div>
+
+
+        <!-- ================= RECUPERAR SENHA ================= -->
+        <div class="tela-recuperar">
+            <h2>Recuperar Senha</h2>
+
+            <form>
+                <label>Digite seu email:</label>
+                <input type="email" placeholder="email@exemplo.com">
+
+                <button class="btn-entrar">Enviar código</button>
+            </form>
+
+            <label for="recuperar-modal" class="voltar-login">← Voltar ao login</label>
+        </div>
+
+    </div>
+</div>
+
+
+    <div class="sub-menu">
+        <div class="area-texto-estoque">
+            <h1>Estoque de Sangue</h1>
+            <span>Os gráficos não contemplam os estoques de Concentrados de Plaquetas e Plasmas.</span>
+        </div>
+        <div class="area-icones-estoque-home">
+            <div class="icone-estoque">
+                <img src="imgs/blood-icon-stock-var1.png" alt="Ícone bolsa de sangue">
+                <p>O+</p>
+                <span>Estável</span>
+            </div>
+            <div class="icone-estoque">
+                <img src="imgs/blood-icon-stock-var1.png" alt="Ícone bolsa de sangue">
+                <p>O-</p>
+                <span>Estável</span>
+            </div>
+            <div class="icone-estoque">
+                <img src="imgs/blood-icon-stock-var1.png" alt="Ícone bolsa de sangue">
+                <p>A+</p>
+                <span>Estável</span>
+            </div>
+            <div class="icone-estoque">
+                <img src="imgs/blood-icon-stock-var1.png" alt="Ícone bolsa de sangue">
+                <p>A-</p>
+                <span>Estável</span>
+            </div>
+            <div class="icone-estoque">
+                <img src="imgs/blood-icon-stock-var1.png" alt="Ícone bolsa de sangue">
+                <p>AB+</p>
+                <span>Estável</span>
+            </div>
+            <div class="icone-estoque">
+                <img src="imgs/blood-icon-stock-var1.png" alt="Ícone bolsa de sangue">
+                <p>AB-</p>
+                <span>Estável</span>
+            </div>
+            <div class="icone-estoque">
+                <img src="imgs/blood-icon-stock-var1.png" alt="Ícone bolsa de sangue">
+                <p>B+</p>
+                <span>Estável</span>
+            </div>
+            <div class="icone-estoque">
+                <img src="imgs/blood-icon-stock-var1.png" alt="Ícone bolsa de sangue">
+                <p>B-</p>
+                <span>Estável</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- <br> -->
+
+    <div class="blocos-informativos">
+
+    <a href="criterios.html" class="bloco">CRITÉRIOS PARA DOAR</a>
+
+    <a href="preparacao.html" class="bloco">PREPARAÇÃO PRÉ-DOAÇÃO</a>
+
+    <a href="pos_doacao.html" class="bloco">CUIDADOS PÓS-DOAÇÃO</a>
+
+    <a href="mitos_verdades.html" class="bloco">MITOS E VERDADES</a>
+
+    <a href="tire_duvidas.html" class="bloco">TIRE SUAS DÚVIDAS</a>
+
+</div>
+
+
+    <!-- <br> -->
+
+   <div class="container-simple-form">
+    <div class="formulario-simples">
+        <form class="simple-form" action="#" method="post">
+
+            <h2>VEJA SE ESTÁ APTO A DOAR COM ESTE QUESTIONÁRIO SIMPLES</h2>
+            <hr>
+
+            <div class="campo">
+                <label for="q1">Tem entre 16 e 69 anos?</label>
+                <select id="q1" name="q1">
+                    <option value="">Selecione...</option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="q2">Pesa mais de 50kg?</label>
+                <select id="q2" name="q2">
+                    <option value="">Selecione...</option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="q3">Está bem de saúde hoje?</label>
+                <select id="q3" name="q3">
+                    <option value="">Selecione...</option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="q4">Fez tatuagem, piercing ou cirurgia nos últimos 12 meses?</label>
+                <select id="q4" name="q4">
+                    <option value="">Selecione...</option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="q5">Está grávida, amamentando ou teve parto recentemente?</label>
+                <select id="q5" name="q5">
+                    <option value="">Selecione...</option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="q6">Tomou vacina recentemente (menos de 30 dias)?</label>
+                <select id="q6" name="q6">
+                    <option value="">Selecione...</option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+            </div>
+
+            <p class="aviso">Nenhuma informação é coletada nem armazenada neste site através deste Formulário Simples.</p>
+
+            <button type="submit" class="botao-verificar">VERIFICAR</button>
+
+        </form>
+    </div>
+</div>
+
+<!-- <br> -->
+
+<div class="noticias-container">
+    
+    <h2 class="titulo-noticias">NOTÍCIAS</h2>
+    <hr class="linha-topo">
+
+    <div class="barra-busca">
+        <input type="text" placeholder="Buscar por Notícias">
+        <span class="icone-busca">🔍</span>
+    </div>
+
+    <div class="grid-noticias">
+
+        <div class="card">
+            <div class="imagem-fake"></div>
+            <div class="titulo-card">Título de Notícia 01</div>
+        </div>
+
+        <div class="card">
+            <div class="imagem-fake"></div>
+            <div class="titulo-card">Título de Notícia 01</div>
+        </div>
+
+        <div class="card">
+            <div class="imagem-fake"></div>
+            <div class="titulo-card">Título de Notícia 01</div>
+        </div>
+
+        <div class="card">
+            <div class="imagem-fake"></div>
+            <div class="titulo-card">Título de Notícia 01</div>
+        </div>
+
+        <div class="card">
+            <div class="imagem-fake"></div>
+            <div class="titulo-card">Título de Notícia 01</div>
+        </div>
+
+        <div class="card">
+            <div class="imagem-fake"></div>
+            <div class="titulo-card">Título de Notícia 01</div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- <br> -->
+
+<div class="grafico-wrapper">
+
+    <!-- Título -->
+    <h2 class="titulo-secao">GRÁFICO SOBRE AS DOAÇÕES</h2>
+    <hr class="linha-divisoria">
+
+    <!-- BLOCO 1 -->
+    <div class="bloco-grafico" id="bloco-grafico1">
+
+        <div class="cabecalho-bloco">ESCOLHA SUA VISUALIZAÇÃO - DOADORES</div>
+
+        <div class="abas">
+            <div class="aba ativa">Doadores Cadastrados</div>
+            <div class="aba">Doadores Ativos</div>
+        </div>
+
+        <div class="grafico-barras">
+            <div class="barra h-75"></div>
+            <div class="barra h-45"></div>
+            <div class="barra h-65"></div>
+            <div class="barra h-20"></div>
+            <div class="barra h-40"></div>
+            <div class="barra h-55"></div>
+            <div class="barra h-70"></div>
+            <div class="barra h-80"></div>
+            <div class="barra h-60"></div>
+            <div class="barra h-72"></div>
+        </div>
+
+        <div class="meses">
+            <span>Jan</span><span>Fev</span><span>Mar</span><span>Abr</span>
+            <span>Mai</span><span>Jun</span><span>Jul</span><span>Ago</span>
+            <span>Set</span><span>Out</span><span>Nov</span><span>Dez</span>
+        </div>
+
+    </div>
+
+    <!-- BLOCO 2 -->
+    <div class="bloco-grafico" id="bloco-grafico2">
+
+        <div class="cabecalho-bloco">ESCOLHA SUA VISUALIZAÇÃO - DOAÇÕES</div>
+
+        <div class="abas">
+            <div class="aba ativa">Doações</div>
+            <div class="aba">Metas de Doações</div>
+        </div>
+
+        <div class="grafico-barras">
+            <div class="barra h-75"></div>
+            <div class="barra h-45"></div>
+            <div class="barra h-65"></div>
+            <div class="barra h-20"></div>
+            <div class="barra h-40"></div>
+            <div class="barra h-55"></div>
+            <div class="barra h-70"></div>
+            <div class="barra h-80"></div>
+            <div class="barra h-60"></div>
+            <div class="barra h-72"></div>
+        </div>
+
+        <div class="meses">
+            <span>Jan</span><span>Fev</span><span>Mar</span><span>Abr</span>
+            <span>Mai</span><span>Jun</span><span>Jul</span><span>Ago</span>
+            <span>Set</span><span>Out</span><span>Nov</span><span>Dez</span>
+        </div>
+
+    </div>
+
+    <!-- SELEÇÃO DE ANO -->
+    <div class="anos-label">Escolha o ano:</div>
+
+    <div class="anos">
+        <span class="ano ativo">2025</span>
+        <span class="ano">2024</span>
+        <span class="ano">2023</span>
+        <span class="ano">2022</span>
+        <span class="ano">2021</span>
+        <span class="ano">2020</span>
+        <span class="ano">2019</span>
+        <span class="ano">2018</span>
+        <span class="ano">2017</span>
+        <span class="ano">2016</span>
+        <span class="ano">2015</span>
+        <span class="ano">2014</span>
+        <span class="ano">2013</span>
+        <span class="ano">2012</span>
+        <span class="ano">2011</span>
+        <span class="ano">2010</span>
+    </div>
+
+</div>
+
+<!-- <br> -->
+
+<footer class="rodape">
+    <div class="info-posto">
+        <strong>POSTO DE SAÚDE “X”</strong><br>
+        Endereço: Av. Nicolau Zarvos, nº 754 | CEP: 16401-300<br>
+        Segunda a Sexta, das 08:00 às 18:00 horas.<br>
+        CNPJ: 44.531.788/0001-38
+    </div>
+
+    <div class="info-sistema">
+        <strong>Versão do Sistema:</strong> 1.0 - 18/10/2025<br>
+        <strong>Portal atualizado em:</strong> 17/10/2025 15:00h
+    </div>
+</footer>
+
+</body>
+</html>
