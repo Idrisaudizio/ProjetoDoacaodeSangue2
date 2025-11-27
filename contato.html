@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Sistema de Doação de Sangue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- mesmo CSS do index -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Inputs do modal (precisam ficar antes da .modal-login por causa do CSS) -->
+<input type="checkbox" id="modal-toggle" class="modal-toggle">
+<input type="checkbox" id="recuperar-toggle" class="recuperar-toggle">
+
+<!-- HEADER -->
+<header class="header">
+
+    <a href="index.html" class="logo">Posto de Coleta</a>
+
+    <!-- botão hamburguer -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburguer">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="/">Agendar Doação</a></li>
+            <li><a href="/">Estoque</a></li>
+            <li><a href="/">Informações</a></li>
+            <li><a href="contato.html">Contato</a></li>
+
+            <!-- Botão de login -->
+            <li><label for="login-modal" class="login-btn">Login</label></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- Faixa simples no topo da página de contato (reaproveitando a ideia de sub-menu) -->
+<section class="sub-menu">
+    <div class="area-texto-estoque">
+        <h1>Fale Conosco</h1>
+        <span>Entre em contato com o Hemocentro Lins</span>
+    </div>
+</section>
+
+<main>
+
+    <!-- Bloco principal de contato: informações + mapa + formulário -->
+    <section class="container-simple-form contato-wrapper">
+
+        <!-- LADO ESQUERDO: Informações de contato -->
+        <div class="formulario-simples contato-info">
+            <h2>Informações de Contato</h2>
+            <hr>
+
+            <p><strong>Hemocentro Lins - Unidade Central</strong></p>
+            <p>Rua das Doações, 123 - Centro</p>
+            <p>Lins - SP, 16400-000</p>
+
+            <br>
+
+            <p><strong>Telefone:</strong> (14) 4000-1234</p>
+            <p><strong>WhatsApp:</strong> (14) 9 9876-5432</p>
+            <p><strong>E-mail:</strong> contato@hemocentrolins.com.br</p>
+
+            <br>
+
+            <p><strong>Horário de atendimento:</strong></p>
+            <ul>
+                <li>Segunda a Sexta: 07h00 às 17h00</li>
+                <li>Sábado: 08h00 às 12h00</li>
+                <li>Domingos e feriados: plantões especiais</li>
+            </ul>
+
+            <br>
+
+            <p><strong>Agendamentos:</strong></p>
+            <p>Agende sua doação com antecedência para evitar filas e garantir um atendimento mais rápido.</p>
+        </div>
+
+        <!-- LADO DIREITO: mapa + formulário -->
+        <div class="formulario-simples contato-mapa">
+            <h2>Localização e Mensagem</h2>
+            <hr>
+
+            <p>Veja no mapa abaixo como chegar até o Hemocentro Lins. Você também pode enviar uma mensagem para nossa equipe pelo formulário.</p>
+
+            <div class="mapa-embed">
+                <!-- Exemplo de iframe de mapa (substitua depois pelo seu) -->
+                <!-- Você pode pegar o iframe direto do Google Maps em "Compartilhar" > "Incorporar um mapa" -->
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.665020212948!2d-46.67529422373696!3d-23.509745759752504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef80c4e3f2f09%3A0x3a31098af0d9da0!2sHospital%20(Exemplo)!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+                        width="100%"
+                        height="280"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <br>
+
+            <!-- Formulário de contato (reaproveitando classes do formulário simples) -->
+            <form class="simple-form">
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone / WhatsApp</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(14) 9 9999-9999">
+                </div>
+
+                <div class="campo">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto">
+                        <option value="">Selecione uma opção</option>
+                        <option value="duvidas">Dúvidas sobre doação</option>
+                        <option value="agendamento">Agendamento de doação</option>
+                        <option value="parceria">Parcerias e campanhas</option>
+                        <option value="reclamacao">Reclamações / Sugestões</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui"></textarea>
+                </div>
+
+                <p class="aviso">
+                    Respondemos normalmente em até 2 dias úteis.
+                </p>
+
+                <button type="submit" class="botao-verificar">
+                    Enviar mensagem
+                </button>
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- MODAL DE LOGIN (mesma estrutura do index) -->
+<div class="modal-login">
+    <div class="modal-content">
+
+        <!-- Tela de login -->
+        <div class="tela-login">
+            <h2>Área Restrita</h2>
+
+            <input type="text" placeholder="Usuário">
+            <input type="password" placeholder="Senha">
+
+            <select class="select-login">
+                <option value="">Selecione o perfil</option>
+                <option value="administrador">Administrador</option>
+                <option value="colaborador">Colaborador</option>
+                <option value="medico">Médico</option>
+            </select>
+
+            <button class="btn-entrar">Entrar</button>
+
+            <div class="acoes-extra">
+                <span class="cadastro">Cadastrar</span>
+                <label for="recuperar-toggle" class="esqueceu">Esqueci a senha</label>
+            </div>
+        </div>
+
+        <!-- Tela de recuperação -->
+        <div class="tela-recuperar">
+            <h2>Recuperar senha</h2>
+            <input type="email" placeholder="Digite seu e-mail cadastrado">
+            <button class="btn-entrar">Enviar link de recuperação</button>
+
+            <label for="recuperar-toggle" class="voltar-login">Voltar para o login</label>
+        </div>
+
+        <!-- Fechar modal -->
+        <label for="modal-toggle" class="fechar-modal">&times;</label>
+    </div>
+</div>
+
+<!-- RODAPÉ -->
+<footer class="rodape">
+    <div class="info-posto">
+        <strong>POSTO DE SAÚDE “X”</strong><br>
+        Endereço: Av. Nicolau Zarvos, nº 754 | CEP: 16401-300<br>
+        Segunda a Sexta, das 08:00 às 18:00 horas.<br>
+        CNPJ: 44.531.788/0001-38
+    </div>
+
+    <div class="info-sistema">
+        <strong>Versão do Sistema:</strong> 1.0 - 18/10/2025<br>
+        <strong>Portal atualizado em:</strong> 17/10/2025 15:00h
+    </div>
+</footer>
+
+</body>
+</html>

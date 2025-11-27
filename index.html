@@ -12,7 +12,7 @@
 <body>
    <header class="header">
 
-    <a href="/" class="logo">Posto de Coleta</a>
+    <a href="index.html" class="logo">DOE Lins</a>
 
     <!-- botão hamburguer -->
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -24,11 +24,11 @@
 
     <nav class="nav">
         <ul class="menu">
-            <li><a href="/">Início</a></li>
-            <li><a href="/">Agendar Doação</a></li>
-            <li><a href="/">Estoque</a></li>
-            <li><a href="/">Informações</a></li>
-            <li><a href="/">Contato</a></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="agendar.html">Agendar Doação</a></li>
+            <li><a href="estoque.html">Estoque</a></li>
+            <li><a href="informacoes.html">Informações</a></li>
+            <li><a href="contato.html">Contato</a></li>
 
             <!-- Botão de login -->
             <li><label for="login-modal" class="login-btn">Login</label></li>
@@ -70,8 +70,11 @@
                 <label>Senha:</label>
                 <input type="password" placeholder="Digite sua senha">
 
-                <button class="btn-entrar">Entrar</button>
             </form>
+            <button type="button" class="btn-entrar">
+                <a href="doador.html">Entrar</a>
+            </button>
+
 
             <div class="acoes-extra">
                 <label for="recuperar-modal" class="esqueceu">Esqueci minha senha</label>
@@ -98,11 +101,12 @@
     </div>
 </div>
 
+<!-- ===== SUB MENU ===== -->
 
     <div class="sub-menu">
         <div class="area-texto-estoque">
-            <h1>Estoque de Sangue</h1>
-            <span>Os gráficos não contemplam os estoques de Concentrados de Plaquetas e Plasmas.</span>
+            <h1>Quem precisa de você hoje?</h1>
+            <span>Confira o nosso banco e ajude a manter a vida pulsando</span>
         </div>
         <div class="area-icones-estoque-home">
             <div class="icone-estoque">
@@ -167,7 +171,7 @@
 
     <!-- <br> -->
 
-   <div class="container-simple-form">
+<div class="container-simple-form">    
     <div class="formulario-simples">
         <form class="simple-form" action="#" method="post">
 
@@ -298,8 +302,8 @@
         <div class="cabecalho-bloco">ESCOLHA SUA VISUALIZAÇÃO - DOADORES</div>
 
         <div class="abas">
-            <div class="aba ativa">Doadores Cadastrados</div>
-            <div class="aba">Doadores Ativos</div>
+            <div class="aba ativa">Cadastrados</div>
+            <div class="aba">Ativos</div>
         </div>
 
         <div class="grafico-barras">
@@ -330,7 +334,7 @@
 
         <div class="abas">
             <div class="aba ativa">Doações</div>
-            <div class="aba">Metas de Doações</div>
+            <div class="aba">Metas</div>
         </div>
 
         <div class="grafico-barras">

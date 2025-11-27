@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações - DOE Lins</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog-unificado.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- CHECKBOXES DO MODAL -->
+<input type="checkbox" id="login-modal" class="modal-toggle">
+<input type="checkbox" id="recuperar-modal" class="recuperar-toggle">
+
+<!-- HEADER -->
+<header class="header">
+    <a href="index.html" class="logo">Posto de Coleta</a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburguer">
+        <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="agendar.html">Agendar Doação</a></li>
+            <li><a href="estoque.html">Estoque</a></li>
+            <li><a href="informacoes.html" class="ativo">Informações</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><label for="login-modal" class="login-btn">Login</label></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- MODAL DE LOGIN -->
+<div class="modal-login">
+    <div class="modal-content">
+        <label for="login-modal" class="fechar-modal">&times;</label>
+
+        <div class="tela-login">
+            <h2>Área do Doador</h2>
+            <input type="email" placeholder="E-mail">
+            <input type="password" placeholder="Senha">
+            <button class="btn-entrar">Entrar</button>
+
+            <div class="acoes-extra">
+                <label for="recuperar-modal" class="esqueceu">Esqueci minha senha</label>
+                <a href="cadastro.html" class="cadastro">Ainda não tenho cadastro</a>
+            </div>
+        </div>
+
+        <div class="tela-recuperar">
+            <h2>Recuperar Senha</h2>
+            <input type="email" placeholder="Digite seu e-mail cadastrado">
+            <button class="btn-entrar">Enviar link de recuperação</button>
+            <label for="recuperar-modal" class="voltar-login">← Voltar ao login</label>
+        </div>
+    </div>
+</div>
+
+<!-- BANNER -->
+<section class="banner-blog">
+    <h2>Informações Importantes para Doadores</h2>
+    <p>Tudo o que você precisa saber antes de doar sangue.</p>
+</section>
+
+<main>
+
+    <!-- BLOCO 1 – CARDS DE INFORMAÇÕES GERAIS -->
+    <section class="conteudo-blog">
+        <article class="artigo">
+
+            <h2 class="titulo-artigo">Informações essenciais</h2>
+
+            <div class="cards-criterios">
+
+                <div class="card">
+                    <h3>Quem pode doar?</h3>
+                    <p>Idade entre 16 e 69 anos, bom estado de saúde e mais de 50 kg.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Documentos</h3>
+                    <p>Documento oficial com foto é obrigatório. Ex.: RG, CNH, passaporte.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Intervalos</h3>
+                    <p>Homens: a cada 60 dias. Mulheres: a cada 90 dias.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Duração</h3>
+                    <p>Todo o processo leva entre 40 e 60 minutos.</p>
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+    <!-- BLOCO 2 – COMO FUNCIONA A DOAÇÃO -->
+    <section class="conteudo-blog">
+        <article class="artigo">
+
+            <h2 class="titulo-artigo">Como funciona a doação?</h2>
+
+            <p>A doação de sangue é um processo rápido e seguro. Veja as etapas:</p>
+
+            <div class="cards-preparacao">
+
+                <div class="card">
+                    <h3>1. Cadastro</h3>
+                    <p>Você apresenta seu documento e responde perguntas simples de saúde.</p>
+                </div>
+
+                <div class="card">
+                    <h3>2. Triagem</h3>
+                    <p>Um profissional avalia sinais vitais e condições necessárias para doar.</p>
+                </div>
+
+                <div class="card">
+                    <h3>3. Doação</h3>
+                    <p>O procedimento dura cerca de 10 minutos e é totalmente seguro.</p>
+                </div>
+
+                <div class="card">
+                    <h3>4. Lanche</h3>
+                    <p>Após doar, o doador recebe hidratação e orientação sobre cuidados.</p>
+                </div>
+
+            </div>
+
+        </article>
+    </section>
+
+    <!-- BLOCO 3 – CUIDADOS PRÉ E PÓS DOAÇÃO -->
+    <section class="conteudo-blog">
+        <article class="artigo">
+
+            <h2 class="titulo-artigo">Cuidados importantes</h2>
+
+            <div class="box-destaque">
+                <h3>Antes da doação</h3>
+                <ul>
+                    <li>Durma bem (pelo menos 6 horas).</li>
+                    <li>Evite jejum. Faça uma refeição leve.</li>
+                    <li>Evite alimentos gordurosos nas últimas 3 horas.</li>
+                    <li>Hidrate-se bem.</li>
+                </ul>
+            </div>
+
+            <div class="box-destaque">
+                <h3>Depois da doação</h3>
+                <ul>
+                    <li>Evite esforços físicos por 12h.</li>
+                    <li>Beba bastante líquido.</li>
+                    <li>Não fume por 2 horas.</li>
+                    <li>Mantenha o curativo por pelo menos 4 horas.</li>
+                </ul>
+            </div>
+
+        </article>
+    </section>
+
+    <!-- BLOCO 4 – MITOS E VERDADES CURTOS -->
+    <section class="conteudo-blog">
+        <article class="artigo">
+
+            <h2 class="titulo-artigo">Mitos e verdades sobre doação</h2>
+
+            <div class="lista-mitos-container">
+                <div class="mito-card">
+                    <span class="tag veredito.verdadeiro">Verdade</span>
+                    <h3>Doar sangue não afeta sua saúde.</h3>
+                    <p>O corpo repõe o volume doado em poucas horas.</p>
+                </div>
+
+                <div class="mito-card">
+                    <span class="tag veredito.falso">Mito</span>
+                    <h3>Quem tem tatuagem não pode doar.</h3>
+                    <p>Pode doar após 6 meses da realização da tatuagem.</p>
+                </div>
+
+                <div class="mito-card">
+                    <span class="tag veredito.falso">Mito</span>
+                    <h3>É possível contrair doenças doando sangue.</h3>
+                    <p>Todo material é estéril e descartável.</p>
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+    <!-- BLOCO 5 – PERGUNTAS FREQUENTES -->
+    <section class="conteudo-blog">
+        <article class="artigo">
+
+            <h2 class="titulo-artigo">Perguntas frequentes (FAQ)</h2>
+
+            <div class="faq-container">
+
+                <div class="faq-card">
+                    <h3>Posso doar gripado?</h3>
+                    <p>Não. Aguarde estar sem sintomas por pelo menos 7 dias.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Posso doar usando medicamentos?</h3>
+                    <p>Depende do medicamento. Leve a receita ou embalagem para avaliação.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Menores de idade podem doar?</h3>
+                    <p>Sim, acima de 16 anos, mas precisam de autorização dos responsáveis.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Quantas vezes posso doar ao ano?</h3>
+                    <p>Homens até 4; mulheres até 3 vezes ao ano.</p>
+                </div>
+
+            </div>
+
+        </article>
+    </section>
+
+</main>
+
+<!-- RODAPÉ -->
+<footer class="rodape">
+    <div class="info-posto">
+        <strong>POSTO DE SAÚDE “X”</strong><br>
+        Endereço: Av. Nicolau Zarvos, nº 754 | CEP: 16401-300<br>
+        Segunda a Sexta, das 08:00 às 18:00 horas.<br>
+        CNPJ: 44.531.788/0001-38
+    </div>
+
+    <div class="info-sistema">
+        <strong>Versão do Sistema:</strong> 1.0 - 18/10/2025<br>
+        <strong>Portal atualizado em:</strong> 17/10/2025 15:00h
+    </div>
+</footer>
+
+</body>
+</html>

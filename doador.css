@@ -1,0 +1,243 @@
+/* ===========================
+   ÁREA DO DOADOR – VISUAL NOVO
+   =========================== */
+
+/* Fundo geral */
+body.area-doador {
+    background: #f4f6f9; /* diferenciado das demais páginas */
+}
+
+/* Banner do topo */
+.banner-doador {
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 25px 0;
+}
+
+.banner-doador-conteudo {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    background: #ffffff;
+    padding: 22px 28px;
+    border-radius: 14px;
+    box-shadow: 0px 2px 7px rgba(0,0,0,0.06);
+}
+
+.banner-doador-conteudo h1 {
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+    color: #b32634;
+}
+
+.banner-doador-conteudo p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.badge-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    background: #e8f5e9;
+    color: #1b5e20;
+    border-radius: 30px;
+    font-size: 0.82rem;
+}
+
+.badge-status .pontinho {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #2e7d32;
+}
+
+/* ------------------------------
+   CARDS DO DASHBOARD
+--------------------------------*/
+
+.dashboard-doador {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto 0;
+}
+
+.dashboard-cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card-doador {
+    background: #ffffff;
+    padding: 20px 22px;
+    border-radius: 14px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.05);
+    border-left: 6px solid #d46b74;
+}
+
+.card-doador h2 {
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+    color: #b32634;
+}
+
+.card-doador .data-hora {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-doador .info-extra {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.card-doador .numero-destaque {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #b32634;
+}
+
+.card-doador .link-acao {
+    margin-top: 8px;
+    display: inline-block;
+    font-size: 0.85rem;
+    color: #b32634;
+    text-decoration: underline;
+}
+
+/* Card especial */
+.card-doador.destaque {
+    border-left-color: #b32634;
+}
+
+/* ------------------------------
+   SEÇÃO SECUNDÁRIA (GRID)
+--------------------------------*/
+
+.doador-grid-secundario {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto 50px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
+    gap: 22px;
+}
+
+/* ------------------------------
+   HISTÓRICO DE DOAÇÕES
+--------------------------------*/
+
+.historico-doador-wrapper {
+    background: #fff;
+    padding: 20px 22px;
+    border-radius: 14px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.05);
+}
+
+.historico-doador-wrapper h2 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.tabela-scroll {
+    overflow-x: auto;
+}
+
+.tabela-historico-doador {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+}
+
+.tabela-historico-doador th {
+    background: #f1f3f5;
+    padding: 10px;
+    font-weight: bold;
+    color: #444;
+}
+
+.tabela-historico-doador td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.tabela-historico-doador tr:hover td {
+    background: #f9f9f9;
+}
+
+/* ------------------------------
+   PAINEL LATERAL (ATALHOS + AVISOS)
+--------------------------------*/
+
+.painel-lateral-doador {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.atalhos-doador,
+.avisos-doador {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.05);
+}
+
+.atalhos-doador h2,
+.avisos-doador h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.atalhos-doador ul,
+.avisos-doador ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.atalhos-doador ul li {
+    margin-bottom: 10px;
+}
+
+.atalhos-doador a {
+    color: #b32634;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.atalhos-doador a:hover {
+    text-decoration: underline;
+}
+
+.avisos-doador li {
+    margin-bottom: 8px;
+    border-left: 3px solid #b32634;
+    padding-left: 8px;
+    color: #444;
+    font-size: 0.92rem;
+}
+
+/* ------------------------------
+   RESPONSIVIDADE
+--------------------------------*/
+
+@media (max-width: 900px) {
+    .doador-grid-secundario {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner-doador-conteudo {
+        padding: 16px;
+    }
+
+    .banner-doador-conteudo h1 {
+        font-size: 1.3rem;
+    }
+}

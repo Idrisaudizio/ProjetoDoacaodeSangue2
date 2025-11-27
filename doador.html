@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Doador - DOE Lins</title>
+
+    <!-- CSS GERAL DO SITE -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS ESPECÍFICO DA ÁREA DO DOADOR -->
+    <link rel="stylesheet" href="doador.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+
+<body class="area-doador">
+
+<!-- CHECKBOXES DO MODAL -->
+<input type="checkbox" id="login-modal" class="modal-toggle">
+<input type="checkbox" id="recuperar-modal" class="recuperar-toggle">
+
+<!-- HEADER -->
+<header class="header">
+    <a href="index.html" class="logo">Posto de Coleta</a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburguer">
+        <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="agendar.html">Agendar Doação</a></li>
+            <li><a href="estoque.html">Estoque</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="informacoes.html">Informações</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="doador.html" class="ativo">Área do Doador</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- MODAL LOGIN (caso queira reaproveitar mesmo padrão) -->
+<div class="modal-login">
+    <div class="modal-content">
+
+        <label for="login-modal" class="fechar-modal">&times;</label>
+
+        <div class="tela-login">
+            <h2>Área do Doador</h2>
+
+            <input type="email" placeholder="E-mail">
+            <input type="password" placeholder="Senha">
+            <button class="btn-entrar">Entrar</button>
+
+            <div class="acoes-extra">
+                <label for="recuperar-modal" class="esqueceu">Esqueci minha senha</label>
+                <a href="cadastro.html" class="cadastro">Ainda não tenho cadastro</a>
+            </div>
+        </div>
+
+        <div class="tela-recuperar">
+            <h2>Recuperar Senha</h2>
+            <input type="email" placeholder="Digite seu e-mail cadastrado">
+            <button class="btn-entrar">Enviar link de recuperação</button>
+            <label for="recuperar-modal" class="voltar-login">← Voltar ao login</label>
+        </div>
+    </div>
+</div>
+
+<!-- BANNER / CABEÇALHO DA ÁREA DO DOADOR -->
+<section class="banner-doador">
+    <div class="banner-doador-conteudo">
+        <h1>Olá, Maria Silva</h1>
+        <p>
+            Obrigado por fazer parte da nossa rede de doadores. Aqui você acompanha seus agendamentos,
+            histórico de doações e orientações importantes.
+        </p>
+        <div class="badge-status">
+            <span class="pontinho"></span>
+            <span>Próxima doação liberada a partir de 10/02/2026</span>
+        </div>
+    </div>
+</section>
+
+<main>
+
+    <!-- DASHBOARD – CARDS PRINCIPAIS -->
+    <section class="dashboard-doador">
+        <div class="dashboard-cards">
+
+            <div class="card-doador destaque">
+                <h2>Próximo agendamento</h2>
+                <p class="data-hora">18/12/2025 às 09h30</p>
+                <p class="info-extra">Unidade: Posto Central</p>
+                <p class="info-extra">Situação: Confirmado</p>
+                <a href="agendar.html" class="link-acao">Alterar ou cancelar</a>
+            </div>
+
+            <div class="card-doador">
+                <h2>Sua última doação</h2>
+                <p class="data-hora">20/10/2025</p>
+                <p class="info-extra">Tipo de doação: Sangue total</p>
+                <p class="info-extra">Bolsa coletada com sucesso.</p>
+            </div>
+
+            <div class="card-doador">
+                <h2>Resumo de doações</h2>
+                <p class="numero-destaque">7 doações</p>
+                <p class="info-extra">Doações realizadas neste posto desde 2021.</p>
+                <a href="#historico" class="link-acao">Ver histórico completo</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HISTÓRICO + ATALHOS / AVISOS -->
+    <section class="doador-grid-secundario">
+
+        <!-- HISTÓRICO -->
+        <div class="historico-doador-wrapper" id="historico">
+            <h2>Histórico de doações</h2>
+
+            <div class="tabela-scroll">
+                <table class="tabela-historico-doador">
+                    <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Tipo de doação</th>
+                        <th>Unidade</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>20/10/2025</td>
+                        <td>Sangue total</td>
+                        <td>Posto Central</td>
+                        <td>Concluída</td>
+                    </tr>
+                    <tr>
+                        <td>05/07/2025</td>
+                        <td>Sangue total</td>
+                        <td>Unidade Zona Norte</td>
+                        <td>Concluída</td>
+                    </tr>
+                    <tr>
+                        <td>12/03/2025</td>
+                        <td>Sangue total</td>
+                        <td>Posto Central</td>
+                        <td>Concluída</td>
+                    </tr>
+                    <tr>
+                        <td>25/11/2024</td>
+                        <td>Plasma</td>
+                        <td>Posto Central</td>
+                        <td>Concluída</td>
+                    </tr>
+                    <tr>
+                        <td>10/08/2024</td>
+                        <td>Sangue total</td>
+                        <td>Posto Central</td>
+                        <td>Concluída</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- LADO DIREITO: ATALHOS E AVISOS -->
+        <div class="painel-lateral-doador">
+
+            <div class="atalhos-doador">
+                <h2>Atalhos rápidos</h2>
+                <ul>
+                    <li><a href="agendar.html">Agendar nova doação</a></li>
+                    <li><a href="cadastro.html">Atualizar meus dados</a></li>
+                    <li><a href="noticias.html">Ver notícias e campanhas</a></li>
+                    <li><a href="informacoes.html">Rever orientações para doar</a></li>
+                </ul>
+            </div>
+
+            <div class="avisos-doador">
+                <h2>Avisos da equipe</h2>
+                <ul>
+                    <li>
+                        <strong>Exames liberados:</strong> seus exames da última doação estão disponíveis
+                        para consulta na recepção do posto.
+                    </li>
+                    <li>
+                        <strong>Contato atualizado:</strong> caso tenha trocado de telefone, atualize seus dados
+                        para receber lembretes de agendamento.
+                    </li>
+                    <li>
+                        <strong>Campanha de fim de ano:</strong> ajude a divulgar o mutirão de doação nas redes sociais.
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- RODAPÉ -->
+<footer class="rodape">
+    <div class="info-posto">
+        <strong>POSTO DE SAÚDE “X”</strong><br>
+        Endereço: Av. Nicolau Zarvos, nº 754 | CEP: 16401-300<br>
+        Segunda a Sexta, das 08:00 às 18:00 horas.<br>
+        CNPJ: 44.531.788/0001-38
+    </div>
+
+    <div class="info-sistema">
+        <strong>Versão do Sistema:</strong> 1.0 - 18/10/2025<br>
+        <strong>Portal atualizado em:</strong> 17/10/2025 15:00h
+    </div>
+</footer>
+
+</body>
+</html>
